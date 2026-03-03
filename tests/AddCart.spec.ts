@@ -1,5 +1,6 @@
 import { test, expect } from '@playwright/test';
-import { loginUser } from './Common/login'
+import { loginUser } from './Common/login';
+import { logoutUser } from './Common/logout';
 
 test('add products to cart and verify cart badge count', async ({ page }) => {
   // Login
@@ -18,4 +19,7 @@ test('add products to cart and verify cart badge count', async ({ page }) => {
   // Add second product to cart
   await addToCartButtons.nth(1).click();
   await expect(cartBadge).toHaveText('2');
+
+  // Logout
+  await logoutUser(page);
 });

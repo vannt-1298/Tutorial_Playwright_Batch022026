@@ -1,11 +1,12 @@
 {
-  "name": "Tutorial_Playwright_Batch022026",
+  "name": "tutorial-playwright-batch022026",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "playwright test",
-    "test:ui": "playwright test --ui"
+    "test:ui": "playwright test --ui",
+    "test:stage-login": "playwright test tests/stage_login/dashboard.spec.ts --ui"
   },
   "keywords": [],
   "author": "",

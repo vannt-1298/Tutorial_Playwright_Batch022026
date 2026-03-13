@@ -43,42 +43,41 @@ export default defineConfig({
 
   /* Configure projects for major browsers */
   projects: [
+    // Setup project - chỉ chạy login.setup.ts
     {
-      name: 'chromium',
+      name: 'setup',
+      testMatch: '**/stage_login/login.setup.ts',
       use: { ...devices['Desktop Chrome'] },
     },
 
+    // Regular projects - chạy tất cả tests NGOẠI TRỪ stage_login
+    {
+      name: 'chromium',
+      use: { ...devices['Desktop Chrome'] },
+      testIgnore: '**/stage_login/**',
+    },
     {
       name: 'firefox',
       use: { ...devices['Desktop Firefox'] },
+      testIgnore: '**/stage_login/**',
     },
-
     {
       name: 'webkit',
       use: { ...devices['Desktop Safari'] },
+      testIgnore: '**/stage_login/**',
     },
 
-    /* Test against mobile viewports. */
-    // {
-    //   name: 'Mobile Chrome',
-    //   use: { ...devices['Pixel 5'] },
-    // },
-    // {
-    //   name: 'Mobile Safari',
-    //   use: { ...devices['iPhone 12'] },
-    // },
-
-    /* Test against branded browsers. */
-    // {
-    //   name: 'Microsoft Edge',
-    //   use: { ...devices['Desktop Edge'], channel: 'msedge' },
-    // },
-    // {
-    //   name: 'Google Chrome',
-    //   use: { ...devices['Desktop Chrome'], channel: 'chrome' },
-    // },
+    // Stage-login project - chạy với auth state
+    {
+      name: 'stage-login',
+      testMatch: '**/stage_login/dashboard.spec.ts',
+      use: {
+        ...devices['Desktop Chrome'],
+        storageState: 'playwright/.auth/user.json',
+      },
+      dependencies: ['setup'],
+    },
   ],
-
   /* Run your local dev server before starting the tests */
   // webServer: {
   //   command: 'npm run start',

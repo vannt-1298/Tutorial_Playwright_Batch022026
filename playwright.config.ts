@@ -32,7 +32,7 @@ export default defineConfig({
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
     // baseURL: 'http://localhost:3000',
-    baseURL: 'https://www.saucedemo.com/',
+    // baseURL: 'https://www.saucedemo.com/',
     headless: false, // Mở browser để thấy test chạy trực tiếp
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on', // Capture trace cho tất cả tests (xem được trong HTML report)

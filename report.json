@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 6
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "projects": [
@@ -20,7 +20,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 6
+          "actualWorkers": 1
         },
         "id": "chromium",
         "name": "chromium",
@@ -36,7 +36,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 6
+          "actualWorkers": 1
         },
         "id": "firefox",
         "name": "firefox",
@@ -52,7 +52,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 6
+          "actualWorkers": 1
         },
         "id": "webkit",
         "name": "webkit",
@@ -95,314 +95,61 @@
   },
   "suites": [
     {
-      "title": "BTTH_Bai_3/Bai3.3.spec.ts",
-      "file": "BTTH_Bai_3/Bai3.3.spec.ts",
+      "title": "BTTH_Codegen/todo1.spec.ts",
+      "file": "BTTH_Codegen/todo1.spec.ts",
       "column": 0,
       "line": 0,
-      "specs": [],
-      "suites": [
+      "specs": [
         {
-          "title": "Product Display Tests",
-          "file": "BTTH_Bai_3/Bai3.3.spec.ts",
-          "line": 17,
-          "column": 8,
-          "specs": [
+          "title": "test",
+          "ok": true,
+          "tags": [],
+          "tests": [
             {
-              "title": "TC02 - Verify product count after successful login",
-              "ok": true,
-              "tags": [],
-              "tests": [
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
                 {
-                  "timeout": 60000,
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3301,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-03-13T01:57:43.963Z",
                   "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
+                  "attachments": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 3270,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Bắt đầu chạy nhóm tests cho bài 3.3\n"
-                        },
-                        {
-                          "text": "Kết thúc nhóm tests cho bài 3.3\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-03-12T03:19:53.969Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "/mnt/c/Users/nguyen.thi.van/typescript/Tutorial_Playwright_Batch022026/test-results/BTTH_Bai_3-Bai3.3-Product--d17ef-ount-after-successful-login-chromium/trace.zip"
-                        }
-                      ]
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/mnt/c/Users/nguyen.thi.van/typescript/Tutorial_Playwright_Batch022026/test-results/BTTH_Codegen-todo1-test-chromium/trace.zip"
                     }
-                  ],
-                  "status": "expected"
+                  ]
                 }
               ],
-              "id": "0a4859db95903450bb1e-34b43cc994b524b8200c",
-              "file": "BTTH_Bai_3/Bai3.3.spec.ts",
-              "line": 19,
-              "column": 9
-            },
-            {
-              "title": "TC03 - Verify first product display after successful login",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 3445,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Bắt đầu chạy nhóm tests cho bài 3.3\n"
-                        },
-                        {
-                          "text": "Kết thúc nhóm tests cho bài 3.3\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-03-12T03:19:52.455Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "/mnt/c/Users/nguyen.thi.van/typescript/Tutorial_Playwright_Batch022026/test-results/BTTH_Bai_3-Bai3.3-Product--4e7f9-play-after-successful-login-chromium/trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "0a4859db95903450bb1e-493619fec396c65da7aa",
-              "file": "BTTH_Bai_3/Bai3.3.spec.ts",
-              "line": 24,
-              "column": 9
-            },
-            {
-              "title": "TC02 - Verify product count after successful login",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 7341,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Bắt đầu chạy nhóm tests cho bài 3.3\n"
-                        },
-                        {
-                          "text": "Kết thúc nhóm tests cho bài 3.3\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-03-12T03:19:56.712Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "/mnt/c/Users/nguyen.thi.van/typescript/Tutorial_Playwright_Batch022026/test-results/BTTH_Bai_3-Bai3.3-Product--d17ef-ount-after-successful-login-firefox/trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "0a4859db95903450bb1e-067cf819191d202dfd25",
-              "file": "BTTH_Bai_3/Bai3.3.spec.ts",
-              "line": 19,
-              "column": 9
-            },
-            {
-              "title": "TC03 - Verify first product display after successful login",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 4572,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Bắt đầu chạy nhóm tests cho bài 3.3\n"
-                        },
-                        {
-                          "text": "Kết thúc nhóm tests cho bài 3.3\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-03-12T03:19:52.453Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "/mnt/c/Users/nguyen.thi.van/typescript/Tutorial_Playwright_Batch022026/test-results/BTTH_Bai_3-Bai3.3-Product--4e7f9-play-after-successful-login-firefox/trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "0a4859db95903450bb1e-e834d0ce3af7fdbce44e",
-              "file": "BTTH_Bai_3/Bai3.3.spec.ts",
-              "line": 24,
-              "column": 9
-            },
-            {
-              "title": "TC02 - Verify product count after successful login",
-              "ok": false,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
-                  "results": [
-                    {
-                      "workerIndex": 4,
-                      "parallelIndex": 4,
-                      "status": "failed",
-                      "duration": 0,
-                      "error": {
-                        "message": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Missing libraries:                                   ║\n║     libgtk-4.so.1                                    ║\n║     libgraphene-1.0.so.0                             ║\n║     libatomic.so.1                                   ║\n║     libxslt.so.1                                     ║\n║     libevent-2.1.so.7                                ║\n║     libopus.so.0                                     ║\n║     libgstallocators-1.0.so.0                        ║\n║     libgstapp-1.0.so.0                               ║\n║     libgstpbutils-1.0.so.0                           ║\n║     libgstaudio-1.0.so.0                             ║\n║     libgsttag-1.0.so.0                               ║\n║     libgstvideo-1.0.so.0                             ║\n║     libgstgl-1.0.so.0                                ║\n║     libgstcodecparsers-1.0.so.0                      ║\n║     libgstfft-1.0.so.0                               ║\n║     libflite.so.1                                    ║\n║     libflite_usenglish.so.1                          ║\n║     libflite_cmu_grapheme_lang.so.1                  ║\n║     libflite_cmu_grapheme_lex.so.1                   ║\n║     libflite_cmu_indic_lang.so.1                     ║\n║     libflite_cmu_indic_lex.so.1                      ║\n║     libflite_cmulex.so.1                             ║\n║     libflite_cmu_time_awb.so.1                       ║\n║     libflite_cmu_us_awb.so.1                         ║\n║     libflite_cmu_us_kal16.so.1                       ║\n║     libflite_cmu_us_kal.so.1                         ║\n║     libflite_cmu_us_rms.so.1                         ║\n║     libflite_cmu_us_slt.so.1                         ║\n║     libwebpdemux.so.2                                ║\n║     libavif.so.16                                    ║\n║     libharfbuzz-icu.so.0                             ║\n║     libwebpmux.so.3                                  ║\n║     libmanette-0.2.so.0                              ║\n║     libenchant-2.so.2                                ║\n║     libhyphen.so.0                                   ║\n║     libsecret-1.so.0                                 ║\n║     libwoff2dec.so.1.0.2                             ║\n║     libGLESv2.so.2                                   ║\n║     libx264.so                                       ║\n╚══════════════════════════════════════════════════════╝",
-                        "stack": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Missing libraries:                                   ║\n║     libgtk-4.so.1                                    ║\n║     libgraphene-1.0.so.0                             ║\n║     libatomic.so.1                                   ║\n║     libxslt.so.1                                     ║\n║     libevent-2.1.so.7                                ║\n║     libopus.so.0                                     ║\n║     libgstallocators-1.0.so.0                        ║\n║     libgstapp-1.0.so.0                               ║\n║     libgstpbutils-1.0.so.0                           ║\n║     libgstaudio-1.0.so.0                             ║\n║     libgsttag-1.0.so.0                               ║\n║     libgstvideo-1.0.so.0                             ║\n║     libgstgl-1.0.so.0                                ║\n║     libgstcodecparsers-1.0.so.0                      ║\n║     libgstfft-1.0.so.0                               ║\n║     libflite.so.1                                    ║\n║     libflite_usenglish.so.1                          ║\n║     libflite_cmu_grapheme_lang.so.1                  ║\n║     libflite_cmu_grapheme_lex.so.1                   ║\n║     libflite_cmu_indic_lang.so.1                     ║\n║     libflite_cmu_indic_lex.so.1                      ║\n║     libflite_cmulex.so.1                             ║\n║     libflite_cmu_time_awb.so.1                       ║\n║     libflite_cmu_us_awb.so.1                         ║\n║     libflite_cmu_us_kal16.so.1                       ║\n║     libflite_cmu_us_kal.so.1                         ║\n║     libflite_cmu_us_rms.so.1                         ║\n║     libflite_cmu_us_slt.so.1                         ║\n║     libwebpdemux.so.2                                ║\n║     libavif.so.16                                    ║\n║     libharfbuzz-icu.so.0                             ║\n║     libwebpmux.so.3                                  ║\n║     libmanette-0.2.so.0                              ║\n║     libenchant-2.so.2                                ║\n║     libhyphen.so.0                                   ║\n║     libsecret-1.so.0                                 ║\n║     libwoff2dec.so.1.0.2                             ║\n║     libGLESv2.so.2                                   ║\n║     libx264.so                                       ║\n╚══════════════════════════════════════════════════════╝"
-                      },
-                      "errors": [
-                        {
-                          "message": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Missing libraries:                                   ║\n║     libgtk-4.so.1                                    ║\n║     libgraphene-1.0.so.0                             ║\n║     libatomic.so.1                                   ║\n║     libxslt.so.1                                     ║\n║     libevent-2.1.so.7                                ║\n║     libopus.so.0                                     ║\n║     libgstallocators-1.0.so.0                        ║\n║     libgstapp-1.0.so.0                               ║\n║     libgstpbutils-1.0.so.0                           ║\n║     libgstaudio-1.0.so.0                             ║\n║     libgsttag-1.0.so.0                               ║\n║     libgstvideo-1.0.so.0                             ║\n║     libgstgl-1.0.so.0                                ║\n║     libgstcodecparsers-1.0.so.0                      ║\n║     libgstfft-1.0.so.0                               ║\n║     libflite.so.1                                    ║\n║     libflite_usenglish.so.1                          ║\n║     libflite_cmu_grapheme_lang.so.1                  ║\n║     libflite_cmu_grapheme_lex.so.1                   ║\n║     libflite_cmu_indic_lang.so.1                     ║\n║     libflite_cmu_indic_lex.so.1                      ║\n║     libflite_cmulex.so.1                             ║\n║     libflite_cmu_time_awb.so.1                       ║\n║     libflite_cmu_us_awb.so.1                         ║\n║     libflite_cmu_us_kal16.so.1                       ║\n║     libflite_cmu_us_kal.so.1                         ║\n║     libflite_cmu_us_rms.so.1                         ║\n║     libflite_cmu_us_slt.so.1                         ║\n║     libwebpdemux.so.2                                ║\n║     libavif.so.16                                    ║\n║     libharfbuzz-icu.so.0                             ║\n║     libwebpmux.so.3                                  ║\n║     libmanette-0.2.so.0                              ║\n║     libenchant-2.so.2                                ║\n║     libhyphen.so.0                                   ║\n║     libsecret-1.so.0                                 ║\n║     libwoff2dec.so.1.0.2                             ║\n║     libGLESv2.so.2                                   ║\n║     libx264.so                                       ║\n╚══════════════════════════════════════════════════════╝"
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-03-12T03:19:53.848Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "/mnt/c/Users/nguyen.thi.van/typescript/Tutorial_Playwright_Batch022026/test-results/BTTH_Bai_3-Bai3.3-Product--d17ef-ount-after-successful-login-webkit/trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "unexpected"
-                }
-              ],
-              "id": "0a4859db95903450bb1e-cd3a0b9af1422afe7a14",
-              "file": "BTTH_Bai_3/Bai3.3.spec.ts",
-              "line": 19,
-              "column": 9
-            },
-            {
-              "title": "TC03 - Verify first product display after successful login",
-              "ok": false,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
-                  "results": [
-                    {
-                      "workerIndex": 5,
-                      "parallelIndex": 5,
-                      "status": "failed",
-                      "duration": 0,
-                      "error": {
-                        "message": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Missing libraries:                                   ║\n║     libgtk-4.so.1                                    ║\n║     libgraphene-1.0.so.0                             ║\n║     libatomic.so.1                                   ║\n║     libxslt.so.1                                     ║\n║     libevent-2.1.so.7                                ║\n║     libopus.so.0                                     ║\n║     libgstallocators-1.0.so.0                        ║\n║     libgstapp-1.0.so.0                               ║\n║     libgstpbutils-1.0.so.0                           ║\n║     libgstaudio-1.0.so.0                             ║\n║     libgsttag-1.0.so.0                               ║\n║     libgstvideo-1.0.so.0                             ║\n║     libgstgl-1.0.so.0                                ║\n║     libgstcodecparsers-1.0.so.0                      ║\n║     libgstfft-1.0.so.0                               ║\n║     libflite.so.1                                    ║\n║     libflite_usenglish.so.1                          ║\n║     libflite_cmu_grapheme_lang.so.1                  ║\n║     libflite_cmu_grapheme_lex.so.1                   ║\n║     libflite_cmu_indic_lang.so.1                     ║\n║     libflite_cmu_indic_lex.so.1                      ║\n║     libflite_cmulex.so.1                             ║\n║     libflite_cmu_time_awb.so.1                       ║\n║     libflite_cmu_us_awb.so.1                         ║\n║     libflite_cmu_us_kal16.so.1                       ║\n║     libflite_cmu_us_kal.so.1                         ║\n║     libflite_cmu_us_rms.so.1                         ║\n║     libflite_cmu_us_slt.so.1                         ║\n║     libwebpdemux.so.2                                ║\n║     libavif.so.16                                    ║\n║     libharfbuzz-icu.so.0                             ║\n║     libwebpmux.so.3                                  ║\n║     libmanette-0.2.so.0                              ║\n║     libenchant-2.so.2                                ║\n║     libhyphen.so.0                                   ║\n║     libsecret-1.so.0                                 ║\n║     libwoff2dec.so.1.0.2                             ║\n║     libGLESv2.so.2                                   ║\n║     libx264.so                                       ║\n╚══════════════════════════════════════════════════════╝",
-                        "stack": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Missing libraries:                                   ║\n║     libgtk-4.so.1                                    ║\n║     libgraphene-1.0.so.0                             ║\n║     libatomic.so.1                                   ║\n║     libxslt.so.1                                     ║\n║     libevent-2.1.so.7                                ║\n║     libopus.so.0                                     ║\n║     libgstallocators-1.0.so.0                        ║\n║     libgstapp-1.0.so.0                               ║\n║     libgstpbutils-1.0.so.0                           ║\n║     libgstaudio-1.0.so.0                             ║\n║     libgsttag-1.0.so.0                               ║\n║     libgstvideo-1.0.so.0                             ║\n║     libgstgl-1.0.so.0                                ║\n║     libgstcodecparsers-1.0.so.0                      ║\n║     libgstfft-1.0.so.0                               ║\n║     libflite.so.1                                    ║\n║     libflite_usenglish.so.1                          ║\n║     libflite_cmu_grapheme_lang.so.1                  ║\n║     libflite_cmu_grapheme_lex.so.1                   ║\n║     libflite_cmu_indic_lang.so.1                     ║\n║     libflite_cmu_indic_lex.so.1                      ║\n║     libflite_cmulex.so.1                             ║\n║     libflite_cmu_time_awb.so.1                       ║\n║     libflite_cmu_us_awb.so.1                         ║\n║     libflite_cmu_us_kal16.so.1                       ║\n║     libflite_cmu_us_kal.so.1                         ║\n║     libflite_cmu_us_rms.so.1                         ║\n║     libflite_cmu_us_slt.so.1                         ║\n║     libwebpdemux.so.2                                ║\n║     libavif.so.16                                    ║\n║     libharfbuzz-icu.so.0                             ║\n║     libwebpmux.so.3                                  ║\n║     libmanette-0.2.so.0                              ║\n║     libenchant-2.so.2                                ║\n║     libhyphen.so.0                                   ║\n║     libsecret-1.so.0                                 ║\n║     libwoff2dec.so.1.0.2                             ║\n║     libGLESv2.so.2                                   ║\n║     libx264.so                                       ║\n╚══════════════════════════════════════════════════════╝"
-                      },
-                      "errors": [
-                        {
-                          "message": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Missing libraries:                                   ║\n║     libgtk-4.so.1                                    ║\n║     libgraphene-1.0.so.0                             ║\n║     libatomic.so.1                                   ║\n║     libxslt.so.1                                     ║\n║     libevent-2.1.so.7                                ║\n║     libopus.so.0                                     ║\n║     libgstallocators-1.0.so.0                        ║\n║     libgstapp-1.0.so.0                               ║\n║     libgstpbutils-1.0.so.0                           ║\n║     libgstaudio-1.0.so.0                             ║\n║     libgsttag-1.0.so.0                               ║\n║     libgstvideo-1.0.so.0                             ║\n║     libgstgl-1.0.so.0                                ║\n║     libgstcodecparsers-1.0.so.0                      ║\n║     libgstfft-1.0.so.0                               ║\n║     libflite.so.1                                    ║\n║     libflite_usenglish.so.1                          ║\n║     libflite_cmu_grapheme_lang.so.1                  ║\n║     libflite_cmu_grapheme_lex.so.1                   ║\n║     libflite_cmu_indic_lang.so.1                     ║\n║     libflite_cmu_indic_lex.so.1                      ║\n║     libflite_cmulex.so.1                             ║\n║     libflite_cmu_time_awb.so.1                       ║\n║     libflite_cmu_us_awb.so.1                         ║\n║     libflite_cmu_us_kal16.so.1                       ║\n║     libflite_cmu_us_kal.so.1                         ║\n║     libflite_cmu_us_rms.so.1                         ║\n║     libflite_cmu_us_slt.so.1                         ║\n║     libwebpdemux.so.2                                ║\n║     libavif.so.16                                    ║\n║     libharfbuzz-icu.so.0                             ║\n║     libwebpmux.so.3                                  ║\n║     libmanette-0.2.so.0                              ║\n║     libenchant-2.so.2                                ║\n║     libhyphen.so.0                                   ║\n║     libsecret-1.so.0                                 ║\n║     libwoff2dec.so.1.0.2                             ║\n║     libGLESv2.so.2                                   ║\n║     libx264.so                                       ║\n╚══════════════════════════════════════════════════════╝"
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-03-12T03:19:57.510Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "/mnt/c/Users/nguyen.thi.van/typescript/Tutorial_Playwright_Batch022026/test-results/BTTH_Bai_3-Bai3.3-Product--4e7f9-play-after-successful-login-webkit/trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "unexpected"
-                }
-              ],
-              "id": "0a4859db95903450bb1e-f8e684a8f868d9de8409",
-              "file": "BTTH_Bai_3/Bai3.3.spec.ts",
-              "line": 24,
-              "column": 9
+              "status": "expected"
             }
-          ]
+          ],
+          "id": "c9f1be87e46148448090-808adac00bdf698c868d",
+          "file": "BTTH_Codegen/todo1.spec.ts",
+          "line": 3,
+          "column": 5
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-03-12T03:19:37.629Z",
-    "duration": 32038.934,
-    "expected": 4,
+    "startTime": "2026-03-13T01:57:19.315Z",
+    "duration": 28760.375,
+    "expected": 1,
     "skipped": 0,
-    "unexpected": 2,
+    "unexpected": 0,
     "flaky": 0
   }
 }

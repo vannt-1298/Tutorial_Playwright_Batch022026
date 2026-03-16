@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "C:\\Users\\nguyen.thi.van\\typescript\\Tutorial_Playwright_Batch022026\\playwright.config.ts",
-    "rootDir": "C:/Users/nguyen.thi.van/typescript/Tutorial_Playwright_Batch022026/tests",
+    "configFile": "/mnt/c/Users/nguyen.thi.van/typescript/Tutorial_Playwright_Batch022026/playwright.config.ts",
+    "rootDir": "/mnt/c/Users/nguyen.thi.van/typescript/Tutorial_Playwright_Batch022026/tests",
     "forbidOnly": false,
     "fullyParallel": true,
     "globalSetup": null,
@@ -10,17 +10,21 @@
     "grep": {},
     "grepInvert": null,
     "maxFailures": 0,
-    "metadata": {},
+    "metadata": {
+      "actualWorkers": 4
+    },
     "preserveOutput": "always",
     "projects": [
       {
-        "outputDir": "C:/Users/nguyen.thi.van/typescript/Tutorial_Playwright_Batch022026/test-results",
+        "outputDir": "/mnt/c/Users/nguyen.thi.van/typescript/Tutorial_Playwright_Batch022026/test-results",
         "repeatEach": 1,
         "retries": 0,
-        "metadata": {},
+        "metadata": {
+          "actualWorkers": 4
+        },
         "id": "setup",
         "name": "setup",
-        "testDir": "C:/Users/nguyen.thi.van/typescript/Tutorial_Playwright_Batch022026/tests",
+        "testDir": "/mnt/c/Users/nguyen.thi.van/typescript/Tutorial_Playwright_Batch022026/tests",
         "testIgnore": [],
         "testMatch": [
           "**/stage_login/login.setup.ts"
@@ -28,13 +32,15 @@
         "timeout": 60000
       },
       {
-        "outputDir": "C:/Users/nguyen.thi.van/typescript/Tutorial_Playwright_Batch022026/test-results",
+        "outputDir": "/mnt/c/Users/nguyen.thi.van/typescript/Tutorial_Playwright_Batch022026/test-results",
         "repeatEach": 1,
         "retries": 0,
-        "metadata": {},
+        "metadata": {
+          "actualWorkers": 4
+        },
         "id": "chromium",
         "name": "chromium",
-        "testDir": "C:/Users/nguyen.thi.van/typescript/Tutorial_Playwright_Batch022026/tests",
+        "testDir": "/mnt/c/Users/nguyen.thi.van/typescript/Tutorial_Playwright_Batch022026/tests",
         "testIgnore": [
           "**/stage_login/**"
         ],
@@ -44,13 +50,15 @@
         "timeout": 60000
       },
       {
-        "outputDir": "C:/Users/nguyen.thi.van/typescript/Tutorial_Playwright_Batch022026/test-results",
+        "outputDir": "/mnt/c/Users/nguyen.thi.van/typescript/Tutorial_Playwright_Batch022026/test-results",
         "repeatEach": 1,
         "retries": 0,
-        "metadata": {},
+        "metadata": {
+          "actualWorkers": 4
+        },
         "id": "firefox",
         "name": "firefox",
-        "testDir": "C:/Users/nguyen.thi.van/typescript/Tutorial_Playwright_Batch022026/tests",
+        "testDir": "/mnt/c/Users/nguyen.thi.van/typescript/Tutorial_Playwright_Batch022026/tests",
         "testIgnore": [
           "**/stage_login/**"
         ],
@@ -60,13 +68,15 @@
         "timeout": 60000
       },
       {
-        "outputDir": "C:/Users/nguyen.thi.van/typescript/Tutorial_Playwright_Batch022026/test-results",
+        "outputDir": "/mnt/c/Users/nguyen.thi.van/typescript/Tutorial_Playwright_Batch022026/test-results",
         "repeatEach": 1,
         "retries": 0,
-        "metadata": {},
+        "metadata": {
+          "actualWorkers": 4
+        },
         "id": "webkit",
         "name": "webkit",
-        "testDir": "C:/Users/nguyen.thi.van/typescript/Tutorial_Playwright_Batch022026/tests",
+        "testDir": "/mnt/c/Users/nguyen.thi.van/typescript/Tutorial_Playwright_Batch022026/tests",
         "testIgnore": [
           "**/stage_login/**"
         ],
@@ -76,16 +86,50 @@
         "timeout": 60000
       },
       {
-        "outputDir": "C:/Users/nguyen.thi.van/typescript/Tutorial_Playwright_Batch022026/test-results",
+        "outputDir": "/mnt/c/Users/nguyen.thi.van/typescript/Tutorial_Playwright_Batch022026/test-results",
         "repeatEach": 1,
         "retries": 0,
-        "metadata": {},
+        "metadata": {
+          "actualWorkers": 4
+        },
         "id": "stage-login",
         "name": "stage-login",
-        "testDir": "C:/Users/nguyen.thi.van/typescript/Tutorial_Playwright_Batch022026/tests",
+        "testDir": "/mnt/c/Users/nguyen.thi.van/typescript/Tutorial_Playwright_Batch022026/tests",
         "testIgnore": [],
         "testMatch": [
           "**/stage_login/dashboard.spec.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/mnt/c/Users/nguyen.thi.van/typescript/Tutorial_Playwright_Batch022026/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "fixtures-setup",
+        "name": "fixtures-setup",
+        "testDir": "/mnt/c/Users/nguyen.thi.van/typescript/Tutorial_Playwright_Batch022026/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/fixtures/auth.setup.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/mnt/c/Users/nguyen.thi.van/typescript/Tutorial_Playwright_Batch022026/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "fixtures-tests",
+        "name": "fixtures-tests",
+        "testDir": "/mnt/c/Users/nguyen.thi.van/typescript/Tutorial_Playwright_Batch022026/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/fixtures/saucedemo.spec.ts"
         ],
         "timeout": 60000
       }
@@ -121,13 +165,13 @@
   },
   "suites": [
     {
-      "title": "stage_login\\login.setup.ts",
-      "file": "stage_login/login.setup.ts",
+      "title": "fixtures/auth.setup.ts",
+      "file": "fixtures/auth.setup.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "authenticate",
+          "title": "authenticate - save storageState",
           "ok": true,
           "tags": [],
           "tests": [
@@ -135,102 +179,64 @@
               "timeout": 60000,
               "annotations": [],
               "expectedStatus": "passed",
-              "projectId": "setup",
-              "projectName": "setup",
-              "results": [],
-              "status": "skipped"
+              "projectId": "fixtures-setup",
+              "projectName": "fixtures-setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2953,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "🌐 Navigated to saucedemo.com\n"
+                    },
+                    {
+                      "text": "✅ Login successful\n"
+                    },
+                    {
+                      "text": "💾 Auth state saved to: playwright/.auth/auth.json\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-03-16T03:17:24.461Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/mnt/c/Users/nguyen.thi.van/typescript/Tutorial_Playwright_Batch022026/test-results/fixtures-auth.setup.ts-authenticate---save-storageState-fixtures-setup/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
             }
           ],
-          "id": "cf28a9fcc3c289012994-e7f199b02fdae9179361",
-          "file": "stage_login/login.setup.ts",
-          "line": 7,
+          "id": "6db7255f214771fc958b-dccc9c37d725dff7ca2a",
+          "file": "fixtures/auth.setup.ts",
+          "line": 12,
           "column": 6
         }
       ]
     },
     {
-      "title": "AddCart.spec.ts",
-      "file": "AddCart.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "add products to cart and verify cart badge count",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "bb83f005170f44968939-70e7ce5432543f238b4b",
-          "file": "AddCart.spec.ts",
-          "line": 5,
-          "column": 5
-        },
-        {
-          "title": "add products to cart and verify cart badge count",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "firefox",
-              "projectName": "firefox",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "bb83f005170f44968939-13eef3a67af9deb8fa36",
-          "file": "AddCart.spec.ts",
-          "line": 5,
-          "column": 5
-        },
-        {
-          "title": "add products to cart and verify cart badge count",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "webkit",
-              "projectName": "webkit",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "bb83f005170f44968939-53be6381d3f05ae71202",
-          "file": "AddCart.spec.ts",
-          "line": 5,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "BTTH_Bai_3\\Bai3.1.spec.ts",
-      "file": "BTTH_Bai_3/Bai3.1.spec.ts",
+      "title": "fixtures/saucedemo.spec.ts",
+      "file": "fixtures/saucedemo.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Login Tests",
-          "file": "BTTH_Bai_3/Bai3.1.spec.ts",
-          "line": 5,
+          "title": "Saucedemo - Fixtures reuse loggedInPage",
+          "file": "fixtures/saucedemo.spec.ts",
+          "line": 8,
           "column": 6,
           "specs": [
             {
-              "title": "TC01 - Login successfully with valid credentials",
+              "title": "TC01 - Role Owner: Add product to cart",
               "ok": true,
               "tags": [],
               "tests": [
@@ -238,19 +244,46 @@
                   "timeout": 60000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [],
-                  "status": "skipped"
+                  "projectId": "fixtures-tests",
+                  "projectName": "fixtures-tests",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2878,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "✅ TC01 - Inventory page loaded (logged in via storageState)\n"
+                        },
+                        {
+                          "text": "✅ TC01 - Product added to cart successfully (Role Owner)\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-16T03:17:40.831Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/mnt/c/Users/nguyen.thi.van/typescript/Tutorial_Playwright_Batch022026/test-results/fixtures-saucedemo-Saucede-2c22e-e-Owner-Add-product-to-cart-fixtures-tests/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
                 }
               ],
-              "id": "dae643d6c91c8d7f90c3-55b9aaca933b21215da3",
-              "file": "BTTH_Bai_3/Bai3.1.spec.ts",
-              "line": 16,
+              "id": "fefd6a34982309d341bb-5fd21219b727466bb77e",
+              "file": "fixtures/saucedemo.spec.ts",
+              "line": 13,
               "column": 7
             },
             {
-              "title": "TC02 - Login fails with invalid password",
+              "title": "TC02 - Role Manager: Add multiple products and verify cart",
               "ok": true,
               "tags": [],
               "tests": [
@@ -258,19 +291,46 @@
                   "timeout": 60000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [],
-                  "status": "skipped"
+                  "projectId": "fixtures-tests",
+                  "projectName": "fixtures-tests",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2142,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "✅ TC02 - Inventory page loaded (logged in via storageState)\n"
+                        },
+                        {
+                          "text": "✅ TC02 - Cart verified with 2 items (Role Manager)\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-16T03:17:45.327Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/mnt/c/Users/nguyen.thi.van/typescript/Tutorial_Playwright_Batch022026/test-results/fixtures-saucedemo-Saucede-1336f-le-products-and-verify-cart-fixtures-tests/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
                 }
               ],
-              "id": "dae643d6c91c8d7f90c3-1d8d07b590c67ebe4d77",
-              "file": "BTTH_Bai_3/Bai3.1.spec.ts",
-              "line": 30,
+              "id": "fefd6a34982309d341bb-ea5cfeec339a746ac2d9",
+              "file": "fixtures/saucedemo.spec.ts",
+              "line": 29,
               "column": 7
             },
             {
-              "title": "TC01 - Login successfully with valid credentials",
+              "title": "TC03 - Search User: Filter products by name A to Z",
               "ok": true,
               "tags": [],
               "tests": [
@@ -278,19 +338,46 @@
                   "timeout": 60000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [],
-                  "status": "skipped"
+                  "projectId": "fixtures-tests",
+                  "projectName": "fixtures-tests",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 2900,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "✅ TC03 - Inventory page loaded (logged in via storageState)\n"
+                        },
+                        {
+                          "text": "✅ TC03 - Products sorted A to Z: [\n  \u001b[32m'Sauce Labs Backpack'\u001b[39m,\n  \u001b[32m'Sauce Labs Bike Light'\u001b[39m,\n  \u001b[32m'Sauce Labs Bolt T-Shirt'\u001b[39m,\n  \u001b[32m'Sauce Labs Fleece Jacket'\u001b[39m,\n  \u001b[32m'Sauce Labs Onesie'\u001b[39m,\n  \u001b[32m'Test.allTheThings() T-Shirt (Red)'\u001b[39m\n]\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-16T03:17:40.834Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/mnt/c/Users/nguyen.thi.van/typescript/Tutorial_Playwright_Batch022026/test-results/fixtures-saucedemo-Saucede-5acb4-ter-products-by-name-A-to-Z-fixtures-tests/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
                 }
               ],
-              "id": "dae643d6c91c8d7f90c3-255c5c2bd2dbdd08098e",
-              "file": "BTTH_Bai_3/Bai3.1.spec.ts",
-              "line": 16,
+              "id": "fefd6a34982309d341bb-24dc91e355fc687714c2",
+              "file": "fixtures/saucedemo.spec.ts",
+              "line": 50,
               "column": 7
             },
             {
-              "title": "TC02 - Login fails with invalid password",
+              "title": "TC04 - Search User: Filter products by price low to high",
               "ok": true,
               "tags": [],
               "tests": [
@@ -298,974 +385,52 @@
                   "timeout": 60000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [],
-                  "status": "skipped"
+                  "projectId": "fixtures-tests",
+                  "projectName": "fixtures-tests",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 2023,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "✅ TC04 - Products sorted by price low to high: [ \u001b[33m7.99\u001b[39m, \u001b[33m9.99\u001b[39m, \u001b[33m15.99\u001b[39m, \u001b[33m15.99\u001b[39m, \u001b[33m29.99\u001b[39m, \u001b[33m49.99\u001b[39m ]\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-16T03:17:47.508Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/mnt/c/Users/nguyen.thi.van/typescript/Tutorial_Playwright_Batch022026/test-results/fixtures-saucedemo-Saucede-6e4dd-oducts-by-price-low-to-high-fixtures-tests/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
                 }
               ],
-              "id": "dae643d6c91c8d7f90c3-6faeec11651340ccf12a",
-              "file": "BTTH_Bai_3/Bai3.1.spec.ts",
-              "line": 30,
-              "column": 7
-            },
-            {
-              "title": "TC01 - Login successfully with valid credentials",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "dae643d6c91c8d7f90c3-b2cb0d3c2a0709a57bd6",
-              "file": "BTTH_Bai_3/Bai3.1.spec.ts",
-              "line": 16,
-              "column": 7
-            },
-            {
-              "title": "TC02 - Login fails with invalid password",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "dae643d6c91c8d7f90c3-5a68388622eb6246201b",
-              "file": "BTTH_Bai_3/Bai3.1.spec.ts",
-              "line": 30,
+              "id": "fefd6a34982309d341bb-365844981025f5e948d0",
+              "file": "fixtures/saucedemo.spec.ts",
+              "line": 70,
               "column": 7
             }
           ]
-        }
-      ]
-    },
-    {
-      "title": "BTTH_Bai_3\\Bai3.2.spec.ts",
-      "file": "BTTH_Bai_3/Bai3.2.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [],
-      "suites": [
-        {
-          "title": "Product Display Tests",
-          "file": "BTTH_Bai_3/Bai3.2.spec.ts",
-          "line": 6,
-          "column": 8,
-          "specs": [
-            {
-              "title": "TC02 - Verify product count after successful login",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "9f6d872a2a2bfc9aa700-8e2918bdd246e03aaa89",
-              "file": "BTTH_Bai_3/Bai3.2.spec.ts",
-              "line": 14,
-              "column": 9
-            },
-            {
-              "title": "TC03 - Verify first product display after successful login",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "9f6d872a2a2bfc9aa700-4a3a7b53db9022a3b13b",
-              "file": "BTTH_Bai_3/Bai3.2.spec.ts",
-              "line": 19,
-              "column": 9
-            },
-            {
-              "title": "TC02 - Verify product count after successful login",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "9f6d872a2a2bfc9aa700-b125e8f580f50d63f860",
-              "file": "BTTH_Bai_3/Bai3.2.spec.ts",
-              "line": 14,
-              "column": 9
-            },
-            {
-              "title": "TC03 - Verify first product display after successful login",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "9f6d872a2a2bfc9aa700-126ae70f5f510c3d0916",
-              "file": "BTTH_Bai_3/Bai3.2.spec.ts",
-              "line": 19,
-              "column": 9
-            },
-            {
-              "title": "TC02 - Verify product count after successful login",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "9f6d872a2a2bfc9aa700-aa388e6070f856cb78e2",
-              "file": "BTTH_Bai_3/Bai3.2.spec.ts",
-              "line": 14,
-              "column": 9
-            },
-            {
-              "title": "TC03 - Verify first product display after successful login",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "9f6d872a2a2bfc9aa700-6068f711b2ded753e969",
-              "file": "BTTH_Bai_3/Bai3.2.spec.ts",
-              "line": 19,
-              "column": 9
-            }
-          ]
-        },
-        {
-          "title": "Cart Functionality Tests",
-          "file": "BTTH_Bai_3/Bai3.2.spec.ts",
-          "line": 36,
-          "column": 8,
-          "specs": [
-            {
-              "title": "TC04 - Verify cart badge count after adding product",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "9f6d872a2a2bfc9aa700-6fddf7b6f2f612b25fca",
-              "file": "BTTH_Bai_3/Bai3.2.spec.ts",
-              "line": 46,
-              "column": 9
-            },
-            {
-              "title": "TC04 - Verify cart badge count after adding product",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "9f6d872a2a2bfc9aa700-985f53bf51cbc58f5813",
-              "file": "BTTH_Bai_3/Bai3.2.spec.ts",
-              "line": 46,
-              "column": 9
-            },
-            {
-              "title": "TC04 - Verify cart badge count after adding product",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "9f6d872a2a2bfc9aa700-0fa6df4212c1556cb201",
-              "file": "BTTH_Bai_3/Bai3.2.spec.ts",
-              "line": 46,
-              "column": 9
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "BTTH_Bai_3\\Bai3.3.spec.ts",
-      "file": "BTTH_Bai_3/Bai3.3.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [],
-      "suites": [
-        {
-          "title": "Product Display Tests",
-          "file": "BTTH_Bai_3/Bai3.3.spec.ts",
-          "line": 17,
-          "column": 8,
-          "specs": [
-            {
-              "title": "TC02 - Verify product count after successful login",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "0a4859db95903450bb1e-34b43cc994b524b8200c",
-              "file": "BTTH_Bai_3/Bai3.3.spec.ts",
-              "line": 19,
-              "column": 9
-            },
-            {
-              "title": "TC03 - Verify first product display after successful login",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "0a4859db95903450bb1e-493619fec396c65da7aa",
-              "file": "BTTH_Bai_3/Bai3.3.spec.ts",
-              "line": 24,
-              "column": 9
-            },
-            {
-              "title": "TC02 - Verify product count after successful login",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "0a4859db95903450bb1e-067cf819191d202dfd25",
-              "file": "BTTH_Bai_3/Bai3.3.spec.ts",
-              "line": 19,
-              "column": 9
-            },
-            {
-              "title": "TC03 - Verify first product display after successful login",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "0a4859db95903450bb1e-e834d0ce3af7fdbce44e",
-              "file": "BTTH_Bai_3/Bai3.3.spec.ts",
-              "line": 24,
-              "column": 9
-            },
-            {
-              "title": "TC02 - Verify product count after successful login",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "0a4859db95903450bb1e-cd3a0b9af1422afe7a14",
-              "file": "BTTH_Bai_3/Bai3.3.spec.ts",
-              "line": 19,
-              "column": 9
-            },
-            {
-              "title": "TC03 - Verify first product display after successful login",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
-                  "results": [],
-                  "status": "skipped"
-                }
-              ],
-              "id": "0a4859db95903450bb1e-f8e684a8f868d9de8409",
-              "file": "BTTH_Bai_3/Bai3.3.spec.ts",
-              "line": 24,
-              "column": 9
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "BTTH_Codegen\\todo1.spec.ts",
-      "file": "BTTH_Codegen/todo1.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "test",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "c9f1be87e46148448090-808adac00bdf698c868d",
-          "file": "BTTH_Codegen/todo1.spec.ts",
-          "line": 3,
-          "column": 5
-        },
-        {
-          "title": "test",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "firefox",
-              "projectName": "firefox",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "c9f1be87e46148448090-cb847159c8ac0c6f4fd0",
-          "file": "BTTH_Codegen/todo1.spec.ts",
-          "line": 3,
-          "column": 5
-        },
-        {
-          "title": "test",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "webkit",
-              "projectName": "webkit",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "c9f1be87e46148448090-d50e5b6b001020119e83",
-          "file": "BTTH_Codegen/todo1.spec.ts",
-          "line": 3,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "BTTH1.1_1.4\\login.spec.ts",
-      "file": "BTTH1.1_1.4/login.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "TC02 - Login successfully with valid credentials",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "74590cdebab12fc30dba-092c6745b00a84cb4a70",
-          "file": "BTTH1.1_1.4/login.spec.ts",
-          "line": 7,
-          "column": 5
-        },
-        {
-          "title": "TC02 - Login successfully with valid credentials",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "firefox",
-              "projectName": "firefox",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "74590cdebab12fc30dba-2aee9e5be030a4905ac2",
-          "file": "BTTH1.1_1.4/login.spec.ts",
-          "line": 7,
-          "column": 5
-        },
-        {
-          "title": "TC02 - Login successfully with valid credentials",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "webkit",
-              "projectName": "webkit",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "74590cdebab12fc30dba-edca73538df0a01391c5",
-          "file": "BTTH1.1_1.4/login.spec.ts",
-          "line": 7,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "BTTH1.1_1.4\\signUp.spec.ts",
-      "file": "BTTH1.1_1.4/signUp.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "TC01 - Register successfully with valid information",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "8b54964044822a94f058-7073c42631a3de88571f",
-          "file": "BTTH1.1_1.4/signUp.spec.ts",
-          "line": 21,
-          "column": 5
-        },
-        {
-          "title": "TC01 - Register successfully with valid information",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "firefox",
-              "projectName": "firefox",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "8b54964044822a94f058-1fa58a1a9b7192082354",
-          "file": "BTTH1.1_1.4/signUp.spec.ts",
-          "line": 21,
-          "column": 5
-        },
-        {
-          "title": "TC01 - Register successfully with valid information",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "webkit",
-              "projectName": "webkit",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "8b54964044822a94f058-7546d28f80818f33cd66",
-          "file": "BTTH1.1_1.4/signUp.spec.ts",
-          "line": 21,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "BTTH1.5\\todo.spec.ts",
-      "file": "BTTH1.5/todo.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "TC01 - Todo MVC: Thêm, hoàn thành và xóa công việc",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "e04024612981b61cf499-f825dcb2aa89a33674dd",
-          "file": "BTTH1.5/todo.spec.ts",
-          "line": 3,
-          "column": 5
-        },
-        {
-          "title": "TC01 - Todo MVC: Thêm, hoàn thành và xóa công việc",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "firefox",
-              "projectName": "firefox",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "e04024612981b61cf499-d41225d0610ca8bf1e9b",
-          "file": "BTTH1.5/todo.spec.ts",
-          "line": 3,
-          "column": 5
-        },
-        {
-          "title": "TC01 - Todo MVC: Thêm, hoàn thành và xóa công việc",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "webkit",
-              "projectName": "webkit",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "e04024612981b61cf499-67608ba01e83c789a2fd",
-          "file": "BTTH1.5/todo.spec.ts",
-          "line": 3,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "example.spec.ts",
-      "file": "example.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "has title",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "a30a6eba6312f6b87ea5-b06063a3e613764d08f8",
-          "file": "example.spec.ts",
-          "line": 3,
-          "column": 5
-        },
-        {
-          "title": "get started link",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "a30a6eba6312f6b87ea5-274e97907a6e3638a22f",
-          "file": "example.spec.ts",
-          "line": 10,
-          "column": 5
-        },
-        {
-          "title": "has title",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "firefox",
-              "projectName": "firefox",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "a30a6eba6312f6b87ea5-f53a5ad453cd33dc57d5",
-          "file": "example.spec.ts",
-          "line": 3,
-          "column": 5
-        },
-        {
-          "title": "get started link",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "firefox",
-              "projectName": "firefox",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "a30a6eba6312f6b87ea5-bfe080d6fe34297f494c",
-          "file": "example.spec.ts",
-          "line": 10,
-          "column": 5
-        },
-        {
-          "title": "has title",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "webkit",
-              "projectName": "webkit",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "a30a6eba6312f6b87ea5-4a26ebd06a6b810edcc2",
-          "file": "example.spec.ts",
-          "line": 3,
-          "column": 5
-        },
-        {
-          "title": "get started link",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "webkit",
-              "projectName": "webkit",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "a30a6eba6312f6b87ea5-1eb159041d56409ed83c",
-          "file": "example.spec.ts",
-          "line": 10,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "searchW3School.spec.ts",
-      "file": "searchW3School.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Search on W3Schools",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "c77c6cef4aebce326312-71de59c94a5a65fd10a2",
-          "file": "searchW3School.spec.ts",
-          "line": 3,
-          "column": 5
-        },
-        {
-          "title": "Search on W3Schools",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "firefox",
-              "projectName": "firefox",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "c77c6cef4aebce326312-8c0f98ef8855128c1fe9",
-          "file": "searchW3School.spec.ts",
-          "line": 3,
-          "column": 5
-        },
-        {
-          "title": "Search on W3Schools",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "webkit",
-              "projectName": "webkit",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "c77c6cef4aebce326312-2e047b3b13bff5f57608",
-          "file": "searchW3School.spec.ts",
-          "line": 3,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "signUp.spec.ts",
-      "file": "signUp.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "register user successfully and verify checked values",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "e9fecdb349855c2f55f4-d8913b8aa9f68d4bdcce",
-          "file": "signUp.spec.ts",
-          "line": 3,
-          "column": 5
-        },
-        {
-          "title": "register user successfully and verify checked values",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "firefox",
-              "projectName": "firefox",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "e9fecdb349855c2f55f4-2dadd976cc60f2ac5d4b",
-          "file": "signUp.spec.ts",
-          "line": 3,
-          "column": 5
-        },
-        {
-          "title": "register user successfully and verify checked values",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "webkit",
-              "projectName": "webkit",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "e9fecdb349855c2f55f4-97954e1fe39ad3ef39fb",
-          "file": "signUp.spec.ts",
-          "line": 3,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "stage_login\\dashboard.spec.ts",
-      "file": "stage_login/dashboard.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "Truy cap dashboard sau khi login san",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "stage-login",
-              "projectName": "stage-login",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "id": "3bc50987e3267310b126-31a72205213ea211aaea",
-          "file": "stage_login/dashboard.spec.ts",
-          "line": 5,
-          "column": 5
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-03-13T10:39:01.056Z",
-    "duration": 45.274,
-    "expected": 0,
-    "skipped": 50,
+    "startTime": "2026-03-16T03:17:10.002Z",
+    "duration": 40323.222,
+    "expected": 5,
+    "skipped": 0,
     "unexpected": 0,
     "flaky": 0
   }

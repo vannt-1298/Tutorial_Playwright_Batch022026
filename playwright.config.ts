@@ -77,6 +77,26 @@ export default defineConfig({
       },
       dependencies: ['setup'],
     },
+
+    // ── Fixtures: auth setup ────────────────────────────────
+    // Chạy auth.setup.ts một lần: login và lưu storageState → auth.json
+    {
+      name: 'fixtures-setup',
+      testMatch: '**/fixtures/auth.setup.ts',
+      use: { ...devices['Desktop Chrome'] },
+    },
+
+    // ── Fixtures: chạy tests dùng loggedInPage fixture ──────
+    // Dùng auth.json (storageState) → browser đã tự động logged in
+    {
+      name: 'fixtures-tests',
+      testMatch: '**/fixtures/saucedemo.spec.ts',
+      use: {
+        ...devices['Desktop Chrome'],
+        storageState: 'playwright/.auth/auth.json',
+      },
+      dependencies: ['fixtures-setup'],
+    },
   ],
   /* Run your local dev server before starting the tests */
   // webServer: {

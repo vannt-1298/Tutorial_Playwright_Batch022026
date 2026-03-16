@@ -40,7 +40,7 @@ test.describe('Saucedemo - Fixtures reuse loggedInPage', () => {
 
     // Mở giỏ hàng và verify có đúng 2 items
     await page.locator('[data-test="shopping-cart-link"]').click();
-    await expect(page.locator('[data-test="inventory-item"]')).toHaveCount(2);
+    await expect(page.locator('[data-test="inventory-item"]')).toHaveCount(3);
     console.log('✅ TC02 - Cart verified with 2 items (Role Manager)');
   });
 

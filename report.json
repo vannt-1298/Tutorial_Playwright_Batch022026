@@ -186,7 +186,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 2953,
+                  "duration": 3260,
                   "errors": [],
                   "stdout": [
                     {
@@ -201,7 +201,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-03-16T03:17:24.461Z",
+                  "startTime": "2026-03-16T04:05:56.792Z",
                   "annotations": [],
                   "attachments": [
                     {
@@ -251,7 +251,7 @@
                       "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2878,
+                      "duration": 2851,
                       "errors": [],
                       "stdout": [
                         {
@@ -263,7 +263,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-16T03:17:40.831Z",
+                      "startTime": "2026-03-16T04:06:09.475Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -284,7 +284,7 @@
             },
             {
               "title": "TC02 - Role Manager: Add multiple products and verify cart",
-              "ok": true,
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -297,31 +297,67 @@
                     {
                       "workerIndex": 2,
                       "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 2142,
-                      "errors": [],
+                      "status": "failed",
+                      "duration": 7665,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('[data-test=\"inventory-item\"]')\nExpected: \u001b[32m3\u001b[39m\nReceived: \u001b[31m2\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-test=\"inventory-item\"]')\u001b[22m\n\u001b[2m    9 × locator resolved to 2 elements\u001b[22m\n\u001b[2m      - unexpected value \"2\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('[data-test=\"inventory-item\"]')\nExpected: \u001b[32m3\u001b[39m\nReceived: \u001b[31m2\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-test=\"inventory-item\"]')\u001b[22m\n\u001b[2m    9 × locator resolved to 2 elements\u001b[22m\n\u001b[2m      - unexpected value \"2\"\u001b[22m\n\n    at /mnt/c/Users/nguyen.thi.van/typescript/Tutorial_Playwright_Batch022026/tests/fixtures/saucedemo.spec.ts:43:64",
+                        "location": {
+                          "file": "/mnt/c/Users/nguyen.thi.van/typescript/Tutorial_Playwright_Batch022026/tests/fixtures/saucedemo.spec.ts",
+                          "column": 64,
+                          "line": 43
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 41 |\u001b[39m     \u001b[90m// Mở giỏ hàng và verify có đúng 2 items\u001b[39m\n \u001b[90m 42 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"shopping-cart-link\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 43 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"inventory-item\"]'\u001b[39m))\u001b[33m.\u001b[39mtoHaveCount(\u001b[35m3\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 44 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m'✅ TC02 - Cart verified with 2 items (Role Manager)'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 45 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 46 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/mnt/c/Users/nguyen.thi.van/typescript/Tutorial_Playwright_Batch022026/tests/fixtures/saucedemo.spec.ts",
+                            "column": 64,
+                            "line": 43
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('[data-test=\"inventory-item\"]')\nExpected: \u001b[32m3\u001b[39m\nReceived: \u001b[31m2\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-test=\"inventory-item\"]')\u001b[22m\n\u001b[2m    9 × locator resolved to 2 elements\u001b[22m\n\u001b[2m      - unexpected value \"2\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 41 |\u001b[39m     \u001b[90m// Mở giỏ hàng và verify có đúng 2 items\u001b[39m\n \u001b[90m 42 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"shopping-cart-link\"]'\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 43 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'[data-test=\"inventory-item\"]'\u001b[39m))\u001b[33m.\u001b[39mtoHaveCount(\u001b[35m3\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 44 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m'✅ TC02 - Cart verified with 2 items (Role Manager)'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 45 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 46 |\u001b[39m\u001b[0m\n\u001b[2m    at /mnt/c/Users/nguyen.thi.van/typescript/Tutorial_Playwright_Batch022026/tests/fixtures/saucedemo.spec.ts:43:64\u001b[22m"
+                        }
+                      ],
                       "stdout": [
                         {
                           "text": "✅ TC02 - Inventory page loaded (logged in via storageState)\n"
-                        },
-                        {
-                          "text": "✅ TC02 - Cart verified with 2 items (Role Manager)\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-16T03:17:45.327Z",
+                      "startTime": "2026-03-16T04:06:09.483Z",
                       "annotations": [],
                       "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/mnt/c/Users/nguyen.thi.van/typescript/Tutorial_Playwright_Batch022026/test-results/fixtures-saucedemo-Saucede-1336f-le-products-and-verify-cart-fixtures-tests/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/mnt/c/Users/nguyen.thi.van/typescript/Tutorial_Playwright_Batch022026/test-results/fixtures-saucedemo-Saucede-1336f-le-products-and-verify-cart-fixtures-tests/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/mnt/c/Users/nguyen.thi.van/typescript/Tutorial_Playwright_Batch022026/test-results/fixtures-saucedemo-Saucede-1336f-le-products-and-verify-cart-fixtures-tests/error-context.md"
+                        },
                         {
                           "name": "trace",
                           "contentType": "application/zip",
                           "path": "/mnt/c/Users/nguyen.thi.van/typescript/Tutorial_Playwright_Batch022026/test-results/fixtures-saucedemo-Saucede-1336f-le-products-and-verify-cart-fixtures-tests/trace.zip"
                         }
-                      ]
+                      ],
+                      "errorLocation": {
+                        "file": "/mnt/c/Users/nguyen.thi.van/typescript/Tutorial_Playwright_Batch022026/tests/fixtures/saucedemo.spec.ts",
+                        "column": 64,
+                        "line": 43
+                      }
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
               "id": "fefd6a34982309d341bb-ea5cfeec339a746ac2d9",
@@ -345,7 +381,7 @@
                       "workerIndex": 3,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 2900,
+                      "duration": 2454,
                       "errors": [],
                       "stdout": [
                         {
@@ -357,7 +393,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-16T03:17:40.834Z",
+                      "startTime": "2026-03-16T04:06:11.194Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -392,7 +428,7 @@
                       "workerIndex": 4,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 2023,
+                      "duration": 2587,
                       "errors": [],
                       "stdout": [
                         {
@@ -401,7 +437,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-03-16T03:17:47.508Z",
+                      "startTime": "2026-03-16T04:06:11.203Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -427,11 +463,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-03-16T03:17:10.002Z",
-    "duration": 40323.222,
-    "expected": 5,
+    "startTime": "2026-03-16T04:05:43.575Z",
+    "duration": 34372.630999999994,
+    "expected": 4,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }
